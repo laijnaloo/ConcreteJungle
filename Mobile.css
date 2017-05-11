@@ -1,0 +1,446 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** Styles for all pages **/
+body {
+	background-color: white;
+	margin: 0;
+}
+
+@font-face {
+    font-family: ralewayLight;
+    src: url(Raleway-Light.ttf);
+}
+
+/*reset the boldness of headings */
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+.centerPositioning {
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.textClass {
+	font-family: ralewayLight;
+	color: #9d9f9f;
+	text-align: center;
+}
+
+.productImage {
+	width: 50%;
+	margin-top:40px;
+}
+
+/* not yet visited link */
+a:link {
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+	text-decoration: none;
+}
+
+/* mouse over */
+a:hover {
+	text-decoration: none;
+}
+
+/* selected*/
+a:active {
+	text-decoration: none;
+}
+
+/**load images to pages**/
+.wallpaper {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+#wallpaperBig{
+	display: none;
+}
+
+#wallpaperSmall {
+	display:block;
+	width: 100%;
+}
+
+/*Styles for header*/
+header {
+	position: relative;
+}
+
+#shoppingCart {
+	position: absolute;
+	top: 8px;
+	width: 64px;
+}
+
+#itemsInCart {
+	top: -50px;
+}
+
+#itemsInCart {
+	Font-family: ralewayLight;
+	font-size: 2em;
+	position: absolute;
+}
+
+/**Style for index page**/
+section {
+	background-color: #ff9b4b;
+}
+
+#productHeader {
+	color: white;
+	margin: 0;
+	padding-top:0.5em;
+}
+
+.positionFirstPageProducts {
+	top: 0px;
+	margin-top: 0px;
+}
+
+/** Style for product Page**/
+.textClassProductPage {
+	font-family: ralewayLight;
+	color: #9d9f9f;
+}
+
+#orderedItems {
+	border: 2px solid #ff9b4b;
+    border-radius: 4px;
+}
+
+#addButton {
+	background-color:#ff9b4b;
+}
+
+#descriptionText {
+	width: 80%;
+	text-align: justify;
+	margin-bottom: 4em;
+}
+
+.textClassProductPage {
+	text-align: center;
+}
+
+.smallText {
+	font-size: 1em;
+}
+
+.middleText {
+	font-size: 1.5em;
+}
+
+#addButton {
+	background-color:#ff9b4b;
+	width: 13em;
+	height: 4em;
+}
+
+#addToCartText {
+	padding-top: 0.7em;
+	color: white;
+}
+
+/** Style for Cart page**/
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	text-align: center;
+	padding: 5px;
+	font-size: 1em;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+	background-color: #ff9b4b;
+	color: white;
+	padding: 1em;
+}
+
+input[type=text], .numberForm, select {
+	margin: 8px 0;
+	padding: 12px 20px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+input[type=submit] {
+	margin-bottom: 1em;
+	margin-top: 1em;
+	color: white;
+	background-color: #ff9b4b;
+	padding: 14px 20px;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+}
+
+.validThruInlineing {
+	display: inline;
+	vertical-align: middle;
+}
+
+.productsInTable {
+	width: 50%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.formCardNumber {
+	width: 15%;
+}
+
+label {
+	font-size: 1em;
+}
+
+/**color style for every page**/
+.orangeColor {
+	color: #ff9b4b;
+}
+
+/**Style for footer**/
+footer {
+	background:#d4d8d9;
+}
+
+.footerClass {
+	font-family: ralewayLight;
+	color: #858889;
+	position: relative;
+	padding-left: 60px;
+	top: 30px;
+}
+
+.footerText {
+	width:60%;
+}
+
+footer {
+	height: 22em;
+}
+
+/* load if screen size is over 851 px  */
+@media only screen and (min-width: 851px) {
+
+	/*Style for header**/
+	#shoppingCart {
+		right: 48px;
+	}
+
+	#itemsInCart {
+		right: 25px;
+	}
+
+	/** Style for several pages**/
+	#wallpaperSmall{
+		display: none;
+	}
+
+	#wallpaperBig {
+		display: block;
+		width: 850px;
+	}
+
+	.mainDiv {
+		width: 850px;
+	}
+
+	.ProductBlocks {
+		display: inline-block;
+		width: 250px;
+		margin-left: 30px;
+		vertical-align: top;
+	}
+
+	h3 {
+		margin-bottom: 5px;
+	}
+
+	#pageContent {
+		width: 850px;
+	}
+
+	/** Style for index page**/
+	#productHeader {
+		font-size: 3em;
+	}
+
+	section {
+		height: 6em;
+		margin-bottom: 5em;
+	}
+
+	.productImageIndex {
+		width: 80%;
+		margin-top: 0px;
+	}
+
+	/** Style for product page**/
+	#productPageMargins {
+		margin-top: 80px;
+	}
+
+	#productsDiv {
+		margin-bottom: 40px;
+	}
+
+	.textClassProductPage {
+		text-align: left;
+	}
+
+	.biggerHeaderProductPage {
+		font-size: 1.7em;
+		margin-top: 0px;
+	}
+
+	#addButton {
+		background-color: #ff9b4b;
+		width: 15em;
+		height: 4em;
+	}
+
+	#orderedItems {
+		margin-left: 0px;
+	}
+
+	#descriptionText {
+		margin-left: 0px;
+	}
+
+	/**Style for Cart page **/
+	input[type=text], .numberForm, select {
+		width: 25%;
+	}
+
+	input[type=submit] {
+		width: 25%;
+		height: 2em;
+		font-size: 2em;
+	}
+
+	.formCardNumber {
+		width: 10.5%;
+	}
+
+	#breakValidThrou {
+		font-size: 2em;
+	}
+
+	/**Style for footer**/
+	.footerHeader {
+		font-size: 2em;
+	}
+}
+/* load if screen size is below 850px */
+@media only screen and (min-width: 850px){
+
+	/**Style for header **/
+	#shoppingCart {
+		right: 48px;
+	}
+
+	#itemsInCart {
+		right: 25px;
+	}
+
+	/**Style for several pages **/
+	.positionCentral {
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	/**Style for index page **/
+	#productHeader {
+		font-size: 3em;
+	}
+
+	section {
+		height: 6em;
+		margin-bottom: 5em;
+	}
+
+	/**Style for cart page **/
+	.productsInTable{
+		width: 30%;
+	}
+
+	#breakValidThrou{
+		font-size: 5em;
+	}
+
+	/**Style for footer **/
+	footer {
+		height:25em;
+		background:#d4d8d9;
+	}
+}
+
+@media only screen and (min-width: 670px) {
+	#headerConcrete {
+		text-align: left;
+		margin-left: 10px;
+		font-size: 2.5em;
+		height: 50px;
+	}
+
+	#shoppingCart {
+		left: 85%;
+	}
+
+	#itemsInCart {
+		left: 95%;
+	}
+
+	#productHeader {
+		font-size:2.5em;
+	}
+}
+
+/* load if screen size is below 850px*/
+@media only screen and (max-width: 669px) {
+
+	/**Style for header**/
+	#shoppingCart {
+		left: 80%;
+		width: 10%;
+	}
+
+	#itemsInCart {
+		left: 90%;
+	}
+	/**Style for several pages**/
+	#headerConcrete {
+		text-align: left;
+		margin-left: 10px;
+		font-size: 2em;
+		height: 50px;
+		width: 80%;
+	}
+	/**Style for index page**/
+	section {
+		height: 4em;
+	}
+
+	/**Style for footer**/
+	footer {
+		height: 35em;
+	}
+}
